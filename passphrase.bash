@@ -17,7 +17,7 @@
 # []
 
 GENERATED_LENGTH=4
-DICTIONARY=${PASSPHRASE_DICTIONARY-/usr/share/dict/words}
+DICTIONARY=${PASSWORD_STORE_PASSPHRASE_DICTIONARY-/usr/share/dict/words}
 
 cmd_passphrase_usage() {
 	cat <<-_EOF

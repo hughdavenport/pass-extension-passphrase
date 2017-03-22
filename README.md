@@ -52,6 +52,8 @@ $ pass passphrase generate -c passphrase-secret
 
 ```
 
+You can also use an environment variable `PASSWORD_STORE_PASSPHRASE_DICTIONARY` to change from the default dictionary of `/usr/share/dict/words`
+
 All the other options supported by base `pass` is also supported, such as `--force`, `--inline`, and `--qrcode`.
 
 ## Installation
