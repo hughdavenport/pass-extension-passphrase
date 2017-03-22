@@ -17,14 +17,14 @@
 # []
 
 GENERATED_LENGTH=4
-DICTIONARY=/usr/share/dict/words
+DICTIONARY=${PASSPHRASE_DICTIONARY-/usr/share/dict/words}
 
 cmd_passphrase_usage() {
 	cat <<-_EOF
 	Usage:
 	    $PROGRAM passphrase generate [--clip,-c] [--in-place,-i | --force,-f] pass-name [number of words]
 	        Generate an series of words for a passphrase. The number of words will be default to 4.
-	        The words will come from /usr/share/dict/words, and will all be lower case
+	        The words will come from /usr/share/dict/words or \$PASSPHRASE_DICTIONARY if set, and will all be lower case
 	        Optionally put it on the clipboard and clear board after $CLIP_TIME seconds.
 	        Optionally replace only the first line of an existing file with a new passphrase.
 	_EOF
